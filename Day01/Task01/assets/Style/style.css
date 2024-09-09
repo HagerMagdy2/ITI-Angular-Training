@@ -1,0 +1,23 @@
+.first{
+  margin-bottom: 400px;
+}
+.first .text{
+  margin-left: 35px;
+}
+.second .card{
+  border: 1px solid black;
+  border-left: 1px;
+  border-right: 1px;
+  margin-bottom: 10px;
+}
+.second .cards{
+  display: flex;
+  justify-content: space-between;
+}
+.second .cards img{
+  height: 450px;
+  width: 450px;
+}
+.second .link{
+  margin-bottom: 200px;
+}
