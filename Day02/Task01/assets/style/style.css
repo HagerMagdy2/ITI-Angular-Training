@@ -13,6 +13,31 @@
   height: 500px;
 
 }
+nav{
+  display: flex;
+  position: fixed;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+margin-left: 500px;
+  border-radius: 100px;
+  background-color: rgb(236, 197, 114);
+}
+nav ul{
+display: flex;
+text-decoration: none;
+list-style-type: none;
+
+}
+nav ul li{
+  margin: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+nav ul li a{
+text-decoration-line: none;
+color: white;
+}
 .dots{
 
   display: flex;
