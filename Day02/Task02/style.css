@@ -1,0 +1,21 @@
+.table{
+  border: 1px solid #000;
+  /* border-style: ; */
+}
+table, .table td{
+  text-align: left;
+  /* border-style: double; */
+  border: 1px solid #000;
+}
+.table th{
+  text-align: center;
+}
+.table caption{
+  text-align: center;
+  font-weight: bold;
+  /* border: 1px solid #000; */
+  border-style: double;
+}
+.table .fav {
+  border-style: none;
+}
