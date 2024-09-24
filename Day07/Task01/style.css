@@ -1,0 +1,48 @@
+.container{
+  display: block;
+  width: 20%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 200px;
+  gap: 200px;
+}
+.input{
+  display: flex;
+  justify-content: space-between;
+}
+.output{
+  display: flex;
+  justify-content: space-between;
+}
+.notes{
+  display: flex;
+  justify-content: space-between;
+}
+.container .output .rule{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.container .output .rule div{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.container .output .rule .red{
+  background-color: red;
+}
+.container .output .rule .yellow{
+  background-color: yellow;
+}
+.container .output .rule .green{
+  background-color: green;
+}
+.hidden{
+  background-color: gray;
+}
+.container .text{
+  width: 50px;
+  height: 50px;
+  background-color: blue;  
+}
