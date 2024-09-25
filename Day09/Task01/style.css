@@ -1,0 +1,36 @@
+body{
+  background-color: rgb(188, 125, 246);
+}
+.container{
+  width: 600px;
+  height: 600px;
+  border-radius: 5px;
+  
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 400px;
+}
+.container .card{
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 70px;
+  border-radius: 10px;
+}
+.container .card img{
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+.container .control button{
+  width: 70px;
+  height: 30px;
+  color: #fff;
+  background-color: blueviolet;
+  margin: 20px 20px;
+}
