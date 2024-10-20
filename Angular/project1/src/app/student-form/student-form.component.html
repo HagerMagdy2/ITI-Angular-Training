@@ -1,0 +1,47 @@
+<div class="container">
+  
+    <label for="name" class="m-5">Name</label>
+    <input
+      type="text"
+      class=" form-conrol"
+      placeholder="name"
+      [(ngModel)]="StudentName"
+    />
+    <label for="age" class="m-5">Age</label>
+    <input type="text" class=" form-conrol m-5" placeholder="age" [(ngModel)]="StudentAge" />
+    <input
+      type="button"
+      class="btn btn-primary m-5"
+      value="Add Student"
+      (click)="AddStudent(StudentName,StudentAge)"
+    />
+  
+
+<table class="table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let student of students ; let i=index">
+    <tr>
+    
+      <td scope="row">{{i+1}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.age}}</td>
+      <td><input
+        type="button"
+        class="btn btn-danger"
+        value="Remove Student"
+        (click)="RemoveStudent(student.name)"
+      />
+    </td>
+    </tr>
+    </ng-container>
+  </tbody>
+</table>
+</div>

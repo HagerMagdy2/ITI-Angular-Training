@@ -1,0 +1,45 @@
+<div class="bg-dark p-5">
+  <h1 class="text-center text-white mb-5">Choose Your Track</h1>
+  <select class="form-select mb-5" [(ngModel)]="TrackName">
+    <option selected>ITI Tracks</option>
+    <ng-container *ngFor="let Track of Tracks; let i = index">
+      <option [value]="Track">{{ Track }}</option>
+    </ng-container>
+  </select>
+
+  <p class="text-center text-white">{{ TrackName }} Available At:</p>
+
+  <div [ngSwitch]="TrackName">
+    <!-- Show the same view for multiple cases -->
+    <div *ngSwitchCase="'Mearn'">
+      <ul class="text-center text-white">
+        <li *ngFor="let element1 of Mearn">{{ element1 }}</li>
+      </ul>
+    </div>
+    <div *ngSwitchCase="'DotNet'">
+      <ul class="text-center text-white">
+        <li *ngFor="let element2 of DotNet">{{ element2 }}</li>
+      </ul>
+    </div>
+    <div *ngSwitchCase="'Testing'">
+      <ul class="text-center text-white">
+        <li *ngFor="let element3 of Testing">{{ element3 }}</li>
+      </ul>
+    </div>
+    <div *ngSwitchCase="'Node'">
+      <ul class="text-center text-white">
+        <li *ngFor="let element4 of Node">{{ element4 }}</li>
+      </ul>
+    </div>
+    <div *ngSwitchCase="'Social Media'">
+      <ul class="text-center text-white">
+        <li *ngFor="let element4 of SocialMedia">{{ element4 }}</li>
+      </ul>
+    </div>
+
+    <!-- Default case when there are no matches -->
+    <div *ngSwitchDefault>
+      
+    </div>
+  </div>
+</div>
